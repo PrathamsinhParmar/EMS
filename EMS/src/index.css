@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* 
+*{
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background: #000;
+  font-family: "Rubik";
+  color: white;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+} */
+
+body{
+  background: #000;
+  font-family: "Inter";
+  color: white;
+}
+
+
+#TaskListContainer::-webkit-scrollbar{
+  display: none;
+}
+

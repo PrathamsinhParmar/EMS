@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+body{
+  background-color: black;
+  font-family: "Inter", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+.card{
+  width: 320px;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  
+} 
+
+#Light{
+  background: rgb(2, 2, 66);
+}
+
+#Dark{
+  background-color: azure;
+  color: black;
+}
