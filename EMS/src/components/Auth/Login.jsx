@@ -1,23 +1,25 @@
 import React, { useState } from 'react'
 
 
-const Login = () => {
+const Login = ({loginHandler}) => {
+  
 
   let [email, setEmail] = useState('')
   let [password, setPassword] = useState('')
 
   const submitHandler = (elem) => {
     elem.preventDefault()
-    console.log("Email : ", email)
-    console.log("Password : ", password)
-    console.log("Form Submitted...")
+    loginHandler(email, password)
+    // console.log("Email : ", email)
+    // console.log("Password : ", password)
+    // console.log("Form Submitted...")
     setEmail('')
     setPassword('')
   }
 
   return (
     <div className='h-screen w-screen flex justify-center items-center'>
-      <div className='h-120 w-100 text-white flex flex-col justify-between items-center bg-gray-800 py-10 rounded-2xl'>
+      <div id='LoginContainer' className='h-120 w-100 text-white flex flex-col justify-between items-center bg-gray-800 py-10 rounded-2xl'>
         <h1 className='text-3xl font-bold '>Log In</h1>
         <form action="" className='m-5'
           onSubmit={submitHandler}>

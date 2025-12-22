@@ -4,7 +4,7 @@ const TaskList = () => {
     return (
         <div>
             {/* TASK DESCRIPTION SECTION */}
-            <div className='w-71 h-71 flex flex-col p-5 bg-gray-800 rounded-xl mt-3 break-word'>
+            <div id='TaskDescContainer' className='w-71 h-71 flex flex-col p-5 bg-gray-800 rounded-xl mt-3 break-word'>
                 <div className='flex justify-between text-xs'>
                     <h3 className='bg-red-500 px-2 py-1 rounded font-medium'>High</h3>
                     <span className='mt-1 font-medium'>22 Dec, 2025</span>
