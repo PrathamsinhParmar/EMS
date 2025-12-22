@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import { useContext } from 'react'
+import { AuthContext } from './context/AuthProvider'
 import Login from './components/Auth/Login'
 import EmployeeDashboard from './components/Dashboard/EmployeeDashboard'
 import AdminDashboard from './components/Dashboard/AdminDashboard'
@@ -8,11 +10,22 @@ const App = () => {
 
   let [user, setUser] = useState(null)
 
+  const authData = useContext(AuthContext)
+  
+  useEffect(()=>{
+    if(authData){
+      const loggedInUser = localStorage.getItem("loggedInUser")
+    }
+    
+  },[])
+  
+
+
   const loginHandler = (email, password)=>{
     if(email == 'admin@example.com' && password == 123){
       setUser('admin')
     }
-    else if(email == 'employee1@example.com' && password == 123){
+    else if(authData && authData.employees.find((e)=>e.email == email && e.password == password)){
       setUser('employee')
     }
     else{
@@ -20,6 +33,7 @@ const App = () => {
     }
   }
 
+  
   return (
     <div>
       {!user ? <Login loginHandler = {loginHandler}/> : ''}
