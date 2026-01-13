@@ -24,7 +24,7 @@ const CreateTask = () => {
             {/* TASK FORM SECTION */}
             <div>
                 <div className='w-full bg-gray-800 p-5 rounded-xl'>
-                    <form  id="form"action="" className='w-full flex flex-row  justify-between'
+                    <form  id="form" action="" className='w-full flex flex-row  justify-between'
                         onSubmit={submitHandler}
                     >
                         <div>

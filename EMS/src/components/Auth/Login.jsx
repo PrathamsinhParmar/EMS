@@ -25,13 +25,13 @@ const Login = ({loginHandler}) => {
         <h1 className='text-3xl font-bold '>Log In</h1>
         <form action="" className='m-5'
           onSubmit={submitHandler}>
-          <input value={email} type="email" placeholder='Email' className='w-80 rounded-2xl px-3 py-1 mt-3 border-orange-600 border focus:border-0 focus:ring outline-orange-600 bg-transparent'
+          <input value={email} type="email" placeholder='Email' className='w-full rounded-xl px-3 py-2 mt-3 border-orange-600 border focus:border-0 focus:ring outline-orange-600 bg-transparent'
             onChange={(elem) => {
               setEmail(elem.target.value)
             }}
           />
           <div>
-            <input value={password} type="password" placeholder='Password' className='w-full rounded-2xl px-3 py-1 mt-4  border-orange-600 relative border focus:border-0 focus:ring outline-orange-600 bg-transparent'
+            <input value={password} type="password" placeholder='Password' className='w-full rounded-xl px-3 py-2 mt-4  border-orange-600 relative border focus:border-0 focus:ring outline-orange-600 bg-transparent'
               onChange={(elem) => {
                 setPassword(elem.target.value)
               }}
@@ -48,7 +48,7 @@ const Login = ({loginHandler}) => {
             <button className='text-xs text-orange-600 active:text-white'>Forgot Password</button>
           </div>
           <div className='flex justify-center mt-10'>
-            <button className='text-lg font-medium bg-orange-600 items-center px-32 py-1 rounded-2xl active:bg-orange-700'
+            <button id='loginBtn' className='text-lg font-medium bg-orange-600 items-center px-37 py-1 rounded-xl active:bg-orange-700'
 
             >Log In</button>
           </div>

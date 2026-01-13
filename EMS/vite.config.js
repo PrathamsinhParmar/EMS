@@ -5,4 +5,11 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+   server: {
+    allowedHosts: [
+      'sufficiently-bones-steam-opening.trycloudflare.com',
+      'resistant-atlanta-faqs-modified.trycloudflare.com'
+
+    ]
+  }
 })
