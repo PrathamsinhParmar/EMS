@@ -14,9 +14,7 @@ const App = () => {
 
   const submitHandler = (e)=>{
     e.preventDefault()
-    // console.log("Title : ",title)
-    // console.log("Note : ",details)
-
+  
     // MAIN LOGIC OF NOTES APPLICATION
     let copyTask = [...task]
     copyTask.push({title, details})
