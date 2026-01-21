@@ -1,7 +1,6 @@
 import React, { createContext, useState } from 'react'
 import { getLocalStorage } from '../utils/LocalStorage'
 
-
 export const AuthContext = createContext()
 
 const AuthProvider = ({children}) => {
@@ -12,7 +11,6 @@ const AuthProvider = ({children}) => {
     console.log(employees)
     console.log(admin)
     
-
   return (
     <div>
         <AuthContext.Provider value={{employees,admin}}>
