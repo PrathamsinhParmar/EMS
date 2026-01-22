@@ -13,7 +13,6 @@ const TaskList = () => {
                 <p className='text-s mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis consectetur temporibus facilis magnam aliquid molestiae at doloribus possimus illum amet.</p>
             </div>
         </div>
-
     )
 }
 
