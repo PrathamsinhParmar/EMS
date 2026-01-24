@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { AuthContext } from '../../context/AuthProvider'
 
-
 const Login = ({loginHandler}) => {
   
 
