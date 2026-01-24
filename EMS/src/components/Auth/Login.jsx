@@ -2,7 +2,6 @@ import React, { useContext, useState } from 'react'
 import { AuthContext } from '../../context/AuthProvider'
 
 const Login = ({loginHandler}) => {
-  
 
   let [email, setEmail] = useState('')
   let [password, setPassword] = useState('')
@@ -16,7 +15,6 @@ const Login = ({loginHandler}) => {
     setEmail('')
     setPassword('')
   }
-
 
   return (
     <div className='h-screen w-screen flex justify-center items-center'>
