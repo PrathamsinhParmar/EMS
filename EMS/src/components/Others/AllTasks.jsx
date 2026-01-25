@@ -1,5 +1,4 @@
 import React from 'react'
-
 const AllTasks = () => {
     return (
         <div>
@@ -16,7 +15,6 @@ const AllTasks = () => {
                     <h2 className='font-medium items-center'>Make A UI Design</h2>
                     <h3 className='font-medium'>Status</h3>
                 </div>
-
 
                 <div className='flex flex-row justify-between bg-green-500 px-4 py-2 rounded-xl mb-3'>
                     <h2 className='font-medium'>Pratham</h2>
