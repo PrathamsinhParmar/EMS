@@ -40,8 +40,7 @@ const AllTasks = () => {
                     <h2 className='font-medium items-center'>Make A UI Design</h2>
                     <h3 className='font-medium'>Status</h3>
                 </div>
-
-
+                
             </div>
         </div>
     )
