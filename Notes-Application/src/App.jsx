@@ -62,8 +62,7 @@ const App = () => {
                     }}>Delete</button>
                   </div>
                 })
-            </div>
-            
+            </div>    
       </div>
     </div>
   )
