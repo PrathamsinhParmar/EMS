@@ -61,9 +61,7 @@ const App = () => {
                       deleteNote(idx)
                     }}>Delete</button>
                   </div>
-                })}
-               
-
+                })
             </div>
             
       </div>
