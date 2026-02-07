@@ -22,8 +22,6 @@ const App = () => {
     
   },[authData])
   
-
-
   const loginHandler = (email, password)=>{
     if(email == 'admin@example.com' && password == 123){
       setUser('admin')
