@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 
 const CreateTask = () => {
 
-
     let [title, setTitle] = useState('')
     let [date, setDate] = useState('')
     let [assign, setAssign] = useState('')
