@@ -15,7 +15,6 @@ const Login = ({loginHandler}) => {
     setEmail('')
     setPassword('')
   }
-
   return (
     <div className='h-screen w-screen flex justify-center items-center'>
       <div id='LoginContainer' className='h-120 w-100 text-white flex flex-col justify-between items-center bg-gray-800 py-10 rounded-2xl'>
